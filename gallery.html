@@ -1,278 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="gallery.css" />
     <title>Gallery</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <img
+        src="../assets/coffeecup.png"
+        alt=""
+        style="height: 100px; width: 100px"
+      />
+
+      <div class="menu">
+        <a href="../index.html" class="link">Home</a>
+        <a href="../about/index.html" class="link main-about">About</a>
+        <a href="../about/employee.html" class="link main-about">Employee</a>
+        <div class="dropdown about">
+          <a href="../about/index.html" class="link">About</a>
+          <div class="dropdown-content">
+            <ul>
+              <li class="link emp">
+                <a href="./about/employee.html" >Employee</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="menu">
-            <a href="../index.html" class="link">Home</a>
-            <a href="../about/index.html" class="link main-about">About</a>
-            <a href="../about/employee.html" class="link main-about">Employee</a>
-            <div class="dropdown about">
-                <a href="../about/index.html" class="link">About</a>
-                <div class="dropdown-content">
-                    <ul>
-                        <li class="link emp"><a href="employee.html" target="_blank">Employee</a></li>
-                    </ul>
-                </div>
-            </div>
+        <a href="gallery.html" class="link">Gallery</a>
 
-            <a href="gallery.html" class="link">Gallery</a>
-
-            <div class="dropdown">
-                <a href="#" class="main-nav link drop">
-                    Calendar
-                </a>
-                <div class="dropdown-content">
-                    <ul>
-                        <li class="link"><a href="./calendar/january.html" target="_blank">January</a></li>
-                        <li class="link"><a href="./calendar/february.html" target="_blank">February</a></li>
-                        <li class="link"><a href="./calendar/march.html" target="_blank">March</a></li>
-                        <li class="link"><a href="./calendar/april.html" target="_blank">April</a></li>
-                        <li class="link"><a href="./calendar/may.html" target="_blank">May</a></li>
-                        <li class="link"> <a href="./calendar/june.html" target="_blank">June</a></li>
-                        <li class="link"> <a href="./calendar/july.html" target="_blank">July</a></li>
-                        <li class="link"> <a href="./calendar/august.html" target="_blank">August</a></li>
-                        <li class="link"> <a href="./calendar/september.html" target="_blank">September</a></li>
-                        <li class="link"> <a href="./calendar/october.html" target="_blank">October</a></li>
-                        <li class="link"> <a href="./calendar/november.html" target="_blank">November</a></li>
-                        <li class="link"> <a href="./calendar/december.html" target="_blank">December</a></li>
-                    </ul>
-                </div>
-
-            </div>
-            <a href="#" class="calendar-toggle-handler link">Calendar</a>
-            <a href="/contact.html" class="link">Contact us</a>
+        <div class="dropdown">
+          <a href="#" class="main-nav link drop"> Calendar </a>
+          <div class="dropdown-content">
+            <ul>
+              <li class="link">
+                <a href="./calendar/january.html" target="_blank">January</a>
+              </li>
+              <li class="link">
+                <a href="./calendar/february.html" target="_blank">February</a>
+              </li>
+              <li class="link">
+                <a href="./calendar/march.html" target="_blank">March</a>
+              </li>
+              <li class="link">
+                <a href="./calendar/april.html" target="_blank">April</a>
+              </li>
+              <li class="link">
+                <a href="./calendar/may.html" target="_blank">May</a>
+              </li>
+              <li class="link">
+                <a href="./calendar/june.html" target="_blank">June</a>
+              </li>
+              <li class="link">
+                <a href="./calendar/july.html" target="_blank">July</a>
+              </li>
+              <li class="link">
+                <a href="./calendar/august.html" target="_blank">August</a>
+              </li>
+              <li class="link">
+                <a href="./calendar/september.html" target="_blank"
+                  >September</a
+                >
+              </li>
+              <li class="link">
+                <a href="./calendar/october.html" target="_blank">October</a>
+              </li>
+              <li class="link">
+                <a href="./calendar/november.html" target="_blank">November</a>
+              </li>
+              <li class="link">
+                <a href="./calendar/december.html" target="_blank">December</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="calendar-menu">
-            <i class="calendar-toggle-handler close-calendar-menu-icon fas fa-times fa-1x"></i>
-            <a href="./calendar/january.html" target="_blank" class="link">
-                January
-            </a>
-            <a href="./calendar/february.html" target="_blank" class="link">
-                February
-            </a>
-            <a href="./calendar/march.html" target="_blank" class="link">
-                March
-            </a>
-            <a href="./calendar/april.html" target="_blank" class="link">
-                April
-            </a>
-            <a href="./calendar/may.html" target="_blank" class="link">
-                May
-            </a>
-            <a href="./calendar/june.html" target="_blank" class="link">
-                June
-            </a>
-            <a href="./calendar/july.html" target="_blank" class="link">
-                July
-            </a>
-            <a href="./calendar/august.html" target="_blank" class="link">
-                August
-            </a>
-            <a href="./calendar/september.html" target="_blank" class="link">
-                September
-            </a>
-            <a href="./calendar/october.html" target="_blank" class="link">
-                October
-            </a>
-            <a href="./calendar/november.html" target="_blank" class="link">
-                November
-            </a>
-            <a href="./calendar/december.html" target="_blank" class="link">
-                December
-            </a>
-        </div>
+        <a href="#" class="calendar-toggle-handler link">Calendar</a>
+        <a href="/contact.html" class="link">Contact us</a>
+      </div>
+      <div class="calendar-menu">
+        <i
+          class="calendar-toggle-handler close-calendar-menu-icon fas fa-times fa-1x"
+        ></i>
+        <a href="./calendar/january.html" target="_blank" class="link">
+          January
+        </a>
+        <a href="./calendar/february.html" target="_blank" class="link">
+          February
+        </a>
+        <a href="./calendar/march.html" target="_blank" class="link"> March </a>
+        <a href="./calendar/april.html" target="_blank" class="link"> April </a>
+        <a href="./calendar/may.html" target="_blank" class="link"> May </a>
+        <a href="./calendar/june.html" target="_blank" class="link"> June </a>
+        <a href="./calendar/july.html" target="_blank" class="link"> July </a>
+        <a href="./calendar/august.html" target="_blank" class="link">
+          August
+        </a>
+        <a href="./calendar/september.html" target="_blank" class="link">
+          September
+        </a>
+        <a href="./calendar/october.html" target="_blank" class="link">
+          October
+        </a>
+        <a href="./calendar/november.html" target="_blank" class="link">
+          November
+        </a>
+        <a href="./calendar/december.html" target="_blank" class="link">
+          December
+        </a>
+      </div>
     </header>
     <main>
-        <div class="big-hero">
-            <h1 data-aos="fade-down">Menu</h1>
+      <div class="big-hero">
+        <h1 data-aos="fade-down">Menu</h1>
+      </div>
+      <h1 data-aos="fade-down">Product</h1>
+      <div id="gallery-wrapper" class="container" data-aos="fade-down">
+        <div
+          class="item"
+          data-coffee="Oreo Frappuccino"
+          data-description="This is a description"
+        >
+          <img src="/assets/oreo.jpg" />
+          <p>Oreo Frappuccino</p>
+          <div class="overlay">
+            <div class="content">
+              <i class="fas fa-plus"></i> See Description
+            </div>
+          </div>
         </div>
-        <h1>Products</h1>
-        <div id="gallery-wrapper" class="container" data-aos="fade-down">
-            <div class="item" data-coffee="Oreo Frappuccino" data-description="This is a description">
-                <img src="/assets/oreo.jpg">
-                <p>Oreo Frappuccino</p>
-                <div class="overlay">
-                    <div class="content"><i class="fas fa-plus"></i>
-                        See Description</div>
-                </div>
-            </div>
 
-            <div class="item" data-coffee="Chocolate Fudge Latte" data-description="This is a description">
-                <img src="/assets/coffeedesert.jpg">
-                <p>Chocolate Fudge Latte</p>
-                <div class="overlay">
-                    <div class="content"><i class="fas fa-plus"></i>
-                        See Description</div>
-                </div>
+        <div
+          class="item"
+          data-coffee="Chocolate Fudge Latte"
+          data-description="This is a description"
+        >
+          <img src="/assets/coffeedesert.jpg" />
+          <p>Chocolate Fudge Latte</p>
+          <div class="overlay">
+            <div class="content">
+              <i class="fas fa-plus"></i> See Description
             </div>
-            <div class="item" data-coffee="Caramel Frappuccino" data-description="This is a description">
-                <img src="/assets/caramel.jpg" alt="">
-                <p>Caramel Frappuccino</p>
-                <div class="overlay">
-                    <div class="content"><i class="fas fa-plus"></i>
-                        See Description</div>
-                </div>
-            </div>
-            <div class="item" data-coffee="Iced Coffee" data-description="This is a description">
-                <img src="/assets/Optimized-coffeewmilk.jpg" alt="">
-                <p>Iced Coffee</p>
-                <div class="overlay">
-                    <div class="content"><i class="fas fa-plus"></i>
-                        See Description</div>
-                </div>
-            </div>
-            <div class="item" data-coffee="Latte" data-description="This is a description">
-                <img src="/assets/latte.jpg" alt="">
-                <p>Latte</p>
-                <div class="overlay">
-                    <div class="content"><i class="fas fa-plus"></i>
-                        See Description</div>
-                </div>
-            </div>
-            <div class="item" data-coffee="Coffee with Marshmallow" data-description="This is a description">
-                <img src="/assets/marshmallow.jpg" alt="">
-                <p>Coffee with Marshmallow</p>
-                <div class="overlay">
-                    <div class="content"><i class="fas fa-plus"></i>
-                        See Description</div>
-                </div>
-            </div>
-
-            <div class="item" data-coffee="Cookie Crumble Latte" data-description="This is a description">
-                <img src="/assets/foam.jpg" alt="">
-                <p>Cookie Crumble Latte</p>
-                <div class="overlay">
-                    <div class="content"><i class="fas fa-plus"></i>
-                        See Description</div>
-                </div>
-            </div>
-            <div class="item" data-coffee="Matcha Latte" data-description="This is a description">
-                <img src="/assets/matcha.jpg" alt="">
-                <p>Matcha Latte</p>
-                <div class="overlay">
-                    <div class="content"><i class="fas fa-plus"></i>
-                        See Description</div>
-                </div>
-            </div>
-            <div class="item" data-coffee="Caffè macchiato" data-description="This is a description">
-                <img src="/assets/macchiato.jpg" alt="">
-                <p>Caffè macchiato</p>
-                <div class="overlay">
-                    <div class="content"><i class="fas fa-plus"></i>
-                        See Description</div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div
+          class="item"
+          data-coffee="Caramel Frappuccino"
+          data-description="This is a description"
+        >
+          <img src="/assets/caramel.jpg" alt="" />
+          <p>Caramel Frappuccino</p>
+          <div class="overlay">
+            <div class="content">
+              <i class="fas fa-plus"></i> See Description
+            </div>
+          </div>
+        </div>
+        <div
+          class="item"
+          data-coffee="Iced Coffee"
+          data-description="This is a description"
+        >
+          <img src="/assets/Optimized-coffeewmilk.jpg" alt="" />
+          <p>Iced Coffee</p>
+          <div class="overlay">
+            <div class="content">
+              <i class="fas fa-plus"></i> See Description
+            </div>
+          </div>
+        </div>
+        <div
+          class="item"
+          data-coffee="Latte"
+          data-description="This is a description"
+        >
+          <img src="/assets/latte.jpg" alt="" />
+          <p>Latte</p>
+          <div class="overlay">
+            <div class="content">
+              <i class="fas fa-plus"></i> See Description
+            </div>
+          </div>
+        </div>
+        <div
+          class="item"
+          data-coffee="Coffee with Marshmallow"
+          data-description="This is a description"
+        >
+          <img src="/assets/marshmallow.jpg" alt="" />
+          <p>Coffee with Marshmallow</p>
+          <div class="overlay">
+            <div class="content">
+              <i class="fas fa-plus"></i> See Description
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="item"
+          data-coffee="Cookie Crumble Latte"
+          data-description="This is a description"
+        >
+          <img src="/assets/foam.jpg" alt="" />
+          <p>Cookie Crumble Latte</p>
+          <div class="overlay">
+            <div class="content">
+              <i class="fas fa-plus"></i> See Description
+            </div>
+          </div>
+        </div>
+        <div
+          class="item"
+          data-coffee="Matcha Latte"
+          data-description="This is a description"
+        >
+          <img src="/assets/matcha.jpg" alt="" />
+          <p>Matcha Latte</p>
+          <div class="overlay">
+            <div class="content">
+              <i class="fas fa-plus"></i> See Description
+            </div>
+          </div>
+        </div>
+        <div
+          class="item"
+          data-coffee="Caffè macchiato"
+          data-description="This is a description"
+        >
+          <img src="/assets/macchiato.jpg" alt="" />
+          <p>Caffè macchiato</p>
+          <div class="overlay">
+            <div class="content">
+              <i class="fas fa-plus"></i> See Description
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <div id="description-modal" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <!-- <p>Modal body text goes here.</p> -->
-                </div>
-            </div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"></h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- <p>Modal body text goes here.</p> -->
+          </div>
         </div>
+      </div>
     </div>
     <div class="background">
-        <div class="navigation-menu">
-            <div class="section1-menu">
-                <a href="index.html" >Home</a>
-                <a href="./about/index.html" >About</a>
-            </div>
-            <div class="section2-menu">
-                <a href="gallery.html" >Gallery</a>
-                <a href="/contact.html">Contact Us</a>
-            </div>
+      <div class="navigation-menu">
+        <div class="section1-menu">
+          <a href="index.html">Home</a>
+          <a href="./about/index.html">About</a>
         </div>
-        <div class="contacts">
-            <h2>contacts</h2>
-            coffeefactory@gmail.com
+        <div class="section2-menu">
+          <a href="gallery.html">Gallery</a>
+          <a href="/contact.html">Contact Us</a>
         </div>
-        <div class="nav">
-            <a href="facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="yelp">
-                <i class="fab fa-yelp"></i>
-            </a>
-            <a href="instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </div>
+      </div>
+      <div class="contacts">
+        <h2>contacts</h2>
+        coffeefactory@gmail.com
+      </div>
+      <div class="nav">
+        <a href="facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="yelp">
+          <i class="fab fa-yelp"></i>
+        </a>
+        <a href="instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
     </div>
     <div class="mb">
-        <p>&copy 2020</p>
+      <p>&copy 2020</p>
     </div>
     <footer>
-        <div class="nav">
-            <a href="facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="yelp">
-                <i class="fab fa-yelp"></i>
-            </a>
-            <a href="instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </div>
-        <div class="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="./about/index.html">About</a>
-            <a href="gallery.html">Gallery</a>
-                <a href="/contact.html">Contact Us</a>
-        </div>
+      <div class="nav">
+        <a href="facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="yelp">
+          <i class="fab fa-yelp"></i>
+        </a>
+        <a href="instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="./about/index.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="/contact.html">Contact Us</a>
+      </div>
     </footer>
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({
-            offset: 100,
-            duration: 1000
-        });
+      AOS.init({
+        offset: 100,
+        duration: 1000,
+      });
     </script>
     <!-- Local JS File -->
     <script src="main.js"></script>
-
-</body>
-
+  </body>
 </html>

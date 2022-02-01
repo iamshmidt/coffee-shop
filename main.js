@@ -1,11 +1,4 @@
 // Sticky menu background
-window.addEventListener('scroll', function () {
-  if (window.scrollY > 2400) {
-    document.querySelector('header').style.opacity = 0;
-  } else {
-    document.querySelector('header').style.opacity = 1;
-  }
-});
 
 // hamburger menu
 const hamburger = document.querySelector(".burger");
@@ -26,15 +19,17 @@ calendarHandler.forEach((element) => {
   });
 });
 
-// Bootstrap
 const galleryWrapper = document.querySelector('#gallery-wrapper');
 
-const galleryItems = galleryWrapper.querySelectorAll(".item");
+if (!!galleryWrapper) {
+  const galleryItems = galleryWrapper.querySelectorAll(".item");
 
-galleryItems.forEach((element) => {
-  element.addEventListener("click", (event) => {
-    document.querySelector('.modal-title').innerText = element.dataset.coffee;
-    document.querySelector('.modal-body').innerText = element.dataset.description;
-    $('#description-modal').modal('show');
+  galleryItems.forEach((element) => {
+    element.addEventListener("click", (event) => {
+      document.querySelector(".modal-title").innerText = element.dataset.coffee;
+      document.querySelector(".modal-body").innerText =
+        element.dataset.description;
+      $("#description-modal").modal("show");
+    });
   });
-});
+}

@@ -1,180 +1,178 @@
 * {
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-    text-decoration:none;
-    font-family: 'Inconsolata', monospace;
-    background-color:var(--light-color);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Dongle", sans-serif;
+  background-color: var(--light-color);
 }
 
 :root {
-    --primary-color:#26170F;
-    --secondary-color:#665B4D;
-    --light-color:#D7D8D6;
-    --dark-color:#473C2B;
+  --primary-color: #26170f;
+  --secondary-color: #665b4d;
+  --light-color: #d7d8d6;
+  --dark-color: #473c2b;
 }
 #container {
-    display:grid;
-    grid-template-columns: repeat(3fr, 2);
+  display: grid;
+  grid-template-columns: repeat(3fr, 2);
 }
 
 #calendar {
-    display:flex;
-    position:relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    height: 400px;
-        width: 400px;
-    margin-top: 200px;
-    background-color:var(--primary-color);
-    border-radius: 3%;
-    -webkit-box-shadow: 6px 20px 67px -8px rgba(0,0,0,0.62);
-    -moz-box-shadow: 6px 20px 67px -8px rgba(0,0,0,0.62);
-    box-shadow: 6px 20px 67px -8px rgba(0,0,0,0.62);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 400px;
+  width: 400px;
+  margin-top: 200px;
+  background-color: var(--primary-color);
+  border-radius: 3%;
+  -webkit-box-shadow: 6px 20px 67px -8px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 6px 20px 67px -8px rgba(0, 0, 0, 0.62);
+  box-shadow: 6px 20px 67px -8px rgba(0, 0, 0, 0.62);
 }
 
 th,
 td,
 h1,
 table,
-.card{
-    flex-direction: row;
-    font-size: 1.6rem;
-    background-color:var(--primary-color);
-    color: #fff;
+.card {
+  flex-direction: row;
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  overflow: hidden;
 }
-th{
-    color: #999;
+th {
+  color: #999;
 }
-h1{
-    color: #ffe66d;
-    padding-bottom: 15px;
+h1 {
+  color: #ffe66d;
+  padding-bottom: 15px;
 }
-th{
-    cursor: pointer;
-    font-weight: 500;
+th {
+  cursor: pointer;
+  font-weight: 500;
 }
 th:hover {
-    color:#fff;
+  color: #fff;
 }
 
-td{
-    padding: 10px;
+td {
+  padding: 10px;
 }
 
 td:hover {
-    color: rgba(0,0,0,0.7);
-
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .description {
-    display: none;
-    height: 60px;
-    width:250px;
-    text-align: center;
-    padding: 4px;
-    margin: auto;
-    border-radius: 5px;
-    position: absolute;
-    top: 166px;
-    right: 70px;
-    color: var(--dark-color);
+  display: none;
+  height: 60px;
+  width: 250px;
+  text-align: center;
+  padding: 4px;
+  margin: auto;
+  border-radius: 5px;
+  position: absolute;
+  top: 166px;
+  right: 70px;
+  color: var(--dark-color);
 }
-
-
 
 .description:after {
-    content: " ";
-    position: absolute;
-    right: 121px;
-    top: -15px;
-    border-top: none;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-    border-bottom: 15px solid var(--light-color);
+  content: " ";
+  position: absolute;
+  right: 121px;
+  top: -15px;
+  border-top: none;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid var(--light-color);
 }
 
-.description.two:after{
-    right: 75px;
+.description.two:after {
+  right: 75px;
 }
 
-.description.three{
-    top: 264px;
-    right: 65px;
-    margin:0 auto;
+.description.three {
+  top: 264px;
+  right: 65px;
+  margin: 0 auto;
 }
 
-.description.four{
-top: 318px;
-right: 148px;
-height: 95px;
+.description.four {
+  top: 318px;
+  right: 148px;
+  height: 95px;
 }
 
-.description.four:after{
-    right: 141px;
+.description.four:after {
+  right: 141px;
 }
 
-.description.five{
-    bottom: -179px;
-    left: -113px;
-} 
-
-.description.six{
-    right: -84px;
+.description.five {
+  bottom: -179px;
+  left: -113px;
 }
 
-.description.seven{
-   
-    height: 47px;
-    width: 178px;
-    top: 267px;
-    right: 216px;
-}
-.description.eight{
-    top: 214px;
-    left: -131px;
-    height: 45px;
-    width: 144px;
-}
-.description.eight:after{
-    right: 69px;
-}
-.description.nine{
-    top: 265px;
-    right: 169px;
-    height: 52px;
-    width: 202px;
-}
-.description.ten{
-    height: 51px;
-    width: 217px;
-    top: 215px;
-    right: 81px;
-}
-.description.ten:after{
-    right: 104px;
+.description.six {
+  right: -84px;
 }
 
-.description.eleven{
-    top: 317px;
-    right: 14px;
+.description.seven {
+  height: 47px;
+  width: 178px;
+  top: 267px;
+  right: 216px;
+}
+.description.eight {
+  top: 214px;
+  left: -131px;
+  height: 45px;
+  width: 144px;
+}
+.description.eight:after {
+  right: 69px;
+}
+.description.nine {
+  top: 265px;
+  right: 169px;
+  height: 52px;
+  width: 202px;
+}
+.description.ten {
+  height: 51px;
+  width: 217px;
+  top: 215px;
+  right: 81px;
+}
+.description.ten:after {
+  right: 104px;
 }
 
-.description.tw{
-    height: 48px;
-    width: 190px;
-    bottom: -113px;
-    left: 211px;
-}
-.description.tw:after{
-right: 84px;
+.description.eleven {
+  top: 317px;
+  right: 14px;
 }
 
-.description.thr{
-    bottom: -232px;
-    right: 16px;
+.description.tw {
+  height: 48px;
+  width: 190px;
+  bottom: -113px;
+  left: 211px;
+}
+.description.tw:after {
+  right: 84px;
+}
+
+.description.thr {
+  bottom: -232px;
+  right: 16px;
 }
 
 .new-years-day:hover .description,
@@ -189,12 +187,12 @@ right: 84px;
 .thanksgiving-day:hover .description,
 .christmas-day:hover .description,
 .new-years-day:hover .description {
-    display: block;
+  display: block;
 }
 
 td:hover {
-cursor: pointer;
-color: #ffe66d;;
+  cursor: pointer;
+  color: #ffe66d;
 }
 
 .new-years-day,
@@ -209,21 +207,12 @@ color: #ffe66d;;
 .thanksgiving-day,
 .christmas-day,
 .new-years-day {
-    color:#ffe66d;
+  color: #ffe66d;
 }
 
-
-
-@media screen and (max-width:770px) {
-    #calendar {
-        height: 364px;
-        width: 359px;
-    }
-    
+@media screen and (max-width: 770px) {
+  #calendar {
+    height: 364px;
+    width: 359px;
+  }
 }
-
-
-
-
-
- 
