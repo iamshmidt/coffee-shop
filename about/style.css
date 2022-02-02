@@ -436,6 +436,7 @@ footer .nav a {
 }
 
 @media screen and (max-width: 1200px) {
+  
   .text {
     top: 26%;
   }
